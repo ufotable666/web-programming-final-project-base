@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        #sign {
+            width: 100%;
+            height: 80px;
+            background-size: cover;
+            background-color: #aed7bd;
+        }
+
+        #div1, #div2 {
+            margin-right: 2%;
+            top: 50%;
+            position: relative;
+            text-align: center;
+            transform: translate(-2%, -50%);
+            float: right;
+            border-radius: 10px;
+            border-color: black;
+        }
+
+        #sign\ in, #sign\ up{
+            text-decoration: none;
+            font-size: larger;
+            color: black;
+            font-weight: bolder;
+
+        }
+
+        #title {
+            color: #aed7bd;
+            margin-top: 100px;
+            text-align: center;
+        }
+
+        #personal\ info {
+            text-align: center;
+        }
+
+        #userName, #password {
+            width: 300px;
+            height: 30px;
+            margin-top: 50px;
+            margin-right: 50px;
+            border: 0;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+            text-align: right;
+        }
+
+        #submit{
+            width: 300px;
+            height: 40px;
+            margin-top: 50px;
+            background-color: #aed7bd;
+            border: 0;
+            font-size: large;
+            color: black;
+        }
+
+        #link {
+            text-decoration: none;
+            color: #aed7bd;
+            padding-top: 20px;
+        }
+
+        #hint {
+            padding-top: 20px;
+            padding-bottom: 100px;
+        }
+    </style>
+    <title>Sign in/Sign up</title>
+    <div id="sign">
+        <fieldset id="div1">
+            <a id="sign in" href="https://calm-tundra-65723.herokuapp.com/Signin">
+                Sign in
+            </a>
+        </fieldset>
+        <fieldset id="div2">
+            <a id="sign up" href="https://calm-tundra-65723.herokuapp.com/Signup">
+                Sign up
+            </a>
+        </fieldset>
+    </div>
+
+    <h1 id="title">Sign in</h1>
+    <form action="https://calm-tundra-65723.herokuapp.com/Search" method="GET">
+        <div id="personal info">
+            <label for="userName">*First Name</label>
+            <input type="text" id="userName" name="info">
+            <br>
+            <label for="password">*Password</label>
+            <input type="text" id="password" name="info">
+            <br>
+            <input type="submit" id="submit" value="Sign in">
+            <br>
+            <div id="hint">Do not have an account?
+                <a id="link" href="https://calm-tundra-65723.herokuapp.com/Signup">
+                    Sign up
+                </a> here!
+            </div>
+        </div>
+    </form>
+</head>
+<body>
+
+</body>
+</html>
