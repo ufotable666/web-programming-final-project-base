@@ -234,6 +234,8 @@ express()
   .get('/YilinXu',(req,res)=>res.render('pages/YilinXu'))
   .get('/Search',(req,res)=>res.render('pages/Search'))
   .get('/JiamuLi',(req,res)=>res.render('pages/JiamuLi'))
+  .get('/Signin',(req,res)=>res.render('pages/Signin'))
+  .get('/Signup',(req,res)=>res.render('pages/Signup'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
