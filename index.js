@@ -233,6 +233,7 @@ express()
   })
   .get('/YilinXu',(req,res)=>res.render('pages/YilinXu'))
   .get('/Search',(req,res)=>res.render('pages/Search'))
+  .get('/JiamuLi',(req,res)=>res.render('pages/JiamuLi'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 
